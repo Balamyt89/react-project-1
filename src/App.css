@@ -8,25 +8,5 @@
   grid-template-columns: 2fr 10fr;
 }
 
-.header {
-  grid-area: h;
-  background-color: steelblue;
-}
 
-.header img {
-  width: 60px;
-}
 
-.nav {
-  grid-area: n;
-  background-color: darkolivegreen;
-}
-
-.profile {
-  grid-area: p;
-  background-color: darksalmon;
-}
-
-.profile img {
-  width: 150px;
-}
