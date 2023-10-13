@@ -8,5 +8,12 @@
   grid-template-columns: 2fr 10fr;
 }
 
+.profile {
+  grid-area: p;
+  background-color: darksalmon;
+}
 
-
+.nav {
+  grid-area: n;
+  background-color: darkolivegreen;
+}

@@ -4,19 +4,19 @@ const Navbar = () => {
   return (
     <nav className={cl.nav}>
       <div>
-        <a>Profile</a>
+        <a href='/profile'>Profile</a>
       </div>
       <div>
-        <a>Messages</a>
+        <a href='/messages'>Messages</a>
       </div>
       <div>
-        <a>News</a>
+        <a href='/news'>News</a>
       </div>
       <div>
-        <a>Music</a>
+        <a href='music'>Music</a>
       </div>
       <div>
-        <a>Settings</a>
+        <a href='setting'>Settings</a>
       </div>
     </nav>
   )
