@@ -1,22 +1,28 @@
+import { NavLink } from 'react-router-dom';
 import cl from './Navbar.module.css'
+import Friends from './Friends/Friends';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  console.log(props);
   return (
     <nav className={cl.nav}>
       <div>
-        <a href='/profile'>Profile</a>
+        <NavLink to='/profile'>Profile</NavLink>
       </div>
       <div>
-        <a href='/messages'>Messages</a>
+        <NavLink to='/messages'>Messages</NavLink>
       </div>
       <div>
-        <a href='/news'>News</a>
+        <NavLink to='/news'>News</NavLink>
       </div>
       <div>
-        <a href='music'>Music</a>
+        <NavLink to='music'>Music</NavLink>
       </div>
       <div>
-        <a href='setting'>Settings</a>
+        <NavLink to='setting'>Settings</NavLink>
+      </div>
+      <div>
+        <Friends friends={props.friends}/>
       </div>
     </nav>
   )

@@ -8,18 +8,18 @@ import News from './components/Navbar/News/News';
 import Music from './components/Navbar/Music/Music';
 import Setting from './components/Navbar/Setting/Setting';
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
     <div className="App">
       <Header/>
       <div className='nav'>
-      <Navbar />
+      <Navbar friends={props.data.friends}/>
       </div>
       <div className='profile'>
         <Routes>
         <Route path='/profile' Component={Profile}/>
-        <Route path='/messages' Component={Messages}/>
+        <Route path='/messages' element={<Messages dialogs={props.data.dialogs}/>}/>
         <Route path='/news' Component={News}/>
         <Route path='/music' Component={Music}/>
         <Route path='/setting' Component={Setting}/>

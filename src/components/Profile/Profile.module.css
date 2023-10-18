@@ -1,6 +1,7 @@
 .profile {
   grid-area: p;
   background-color: darksalmon;
+  padding: 10px;
 }
 
 
